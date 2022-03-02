@@ -13,6 +13,7 @@ export class MemberMessagesComponent implements OnInit {
   @ViewChild('messageForm') messageForm: NgForm;
   @Input() messages: Message[];
   @Input() username: string;
+  @Input() userInfoHeight: number = 550;
 
   messageContent: string;
   loading = false;
